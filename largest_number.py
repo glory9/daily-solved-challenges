@@ -1,4 +1,4 @@
-#Uses python3
+# largest possible arrangement of digits
 import sys
 
 def largest_number(a):
