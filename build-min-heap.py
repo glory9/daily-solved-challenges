@@ -1,5 +1,4 @@
-# python3
-
+# implement-heap-using-an-array
 
 
 def build_heap(data):
