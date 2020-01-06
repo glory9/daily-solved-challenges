@@ -1,6 +1,8 @@
 # find the last digit of the nth sum of squares 
 # till the nth fibonacci number
 
+# solution uses greedy approach
+
 def fibonacci_sum_squares(n):
     if n <= 1:
         return n
