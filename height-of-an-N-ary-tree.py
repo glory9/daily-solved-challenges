@@ -46,7 +46,4 @@ sys.setrecursionlimit(10**7)  # max depth of recursion
 threading.stack_size(2**27)   # new thread will get stack of such size
 threading.Thread(target=main).start()
 
-    # t = open("C:\\Users\\glory\\Downloads\\Data_Structures\\week1_basic_data_structures\\2_tree_height\\tests\\20")
-    # n = int(t.readline())
-    # parents = list(map(int, t.read().split()))
-    # print(compute_height(n, parents))  
+ 
