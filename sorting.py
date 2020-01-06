@@ -1,8 +1,8 @@
-# Uses python3
+# Speed up quicksort by skipping duplicate values
 import sys
 import random
 
-def partition3(a, l, r):
+def partition(a, l, r):
     x = a[l]
     j, k = l, l
     
@@ -33,22 +33,6 @@ def partition3(a, l, r):
     return j,k
     
 
-
-def partition2(a, l, r):
-    x = a[l]
-    j = l 
-    for i in range(l + 1, r + 1):
-        
-        if a[i] <= x:
-            j += 1
-            a[i], a[j] = a[j], a[i]    
-    
-    a[l], a[j] = a[j], a[l]
-
-    print(a)
-    
-    return j
-
 def randomized_quick_sort(a, l, r):
     
     if l >= r:
@@ -57,7 +41,7 @@ def randomized_quick_sort(a, l, r):
     
     a[l], a[k] = a[k], a[l]
     
-    p,q = partition3(a, l, r)
+    p,q = partition(a, l, r)
 
     randomized_quick_sort(a, l, p - 1)
     randomized_quick_sort(a, q + 1, r)
