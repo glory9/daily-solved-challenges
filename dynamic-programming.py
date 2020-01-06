@@ -1,4 +1,4 @@
-# Uses python3
+# fewest steps to arrive at a value
 import sys
 
 class Number:
