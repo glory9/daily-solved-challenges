@@ -1,4 +1,5 @@
-# Uses python3
+# last digit of nth fibonacci number
+
 import sys
 
 def get_fibonacci_last_digit_naive(n):
