@@ -1,4 +1,4 @@
-# python3
+# implement a hash map from scratch
 
 class Query:
 
