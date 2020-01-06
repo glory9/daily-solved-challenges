@@ -1,4 +1,5 @@
-# Uses python3
+# edit distance is a concept that attempts to measure how much work
+# is required to make one string an exact copy of the other.
 
 
 def edit_distance(s, t):
@@ -22,9 +23,9 @@ def edit_distance(s, t):
     for q in range(1, l_t):
         for p in range(1, l_s):
             ins = d[p][q - 1] + 1
-            dele = d[p - 1][q] + 1
+            delet = d[p - 1][q] + 1
 
-            dist = min(ins, dele)
+            dist = min(ins, delet)
 
             match = d[p - 1][q - 1]
 
